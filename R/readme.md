@@ -46,6 +46,17 @@ Alternatively, use the exemplary functions provided in the "download_athena.R" f
 
 ## Plot the times series since inception
 
-
-
-
+Load exemplary plotting functions with:
+```
+> source('graphics_time_series.R')
+```
+Get the the data for time series since inception with
+```
+> daybins = get.future.timeseries.days('FDAX')
+```
+Plot the time series with
+```
+> eurex.plot.timeseries.days(daybins)
+```
+R should show the following chart, where the different expiries of the future are shown in different colours.
+(TimeSeriesSinceException_FDAX.png)
