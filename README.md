@@ -22,7 +22,7 @@ The dataset contains a couple of fields to describe the derivatives:
 * **Version** is the contract version, also called contract generation number, that helps to uniquely describe the contract on EUREX, only available where applicable.
 * **SecurityId** is the unique identfier for the contract taken from EUREX's market data interface.
 
-For further information on the contracts traded on EUREX (e.g. opening hours, tick size) go to http://www.eurexchange.com.
+For further information on the contracts traded on EUREX go to http://www.eurexchange.com.
 
 ### XETRA
 
