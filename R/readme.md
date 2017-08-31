@@ -6,8 +6,28 @@ In order to connect to Athena we suggest to use a JDBC connection. In order to d
 * Get latest Java version from www.java.com, if not yet available on your machine.
 * Install R, if not yet available on your machine ,see https://www.r-project.org/.
 * In R, install the libraries "rJava" and "RJBD".
-* Start R and load the libraries, with
+* Start R and load the libraries, with:
+```
 > library('rJava')
 > library('RJDBC')
+```
+* Set up the driver for Athena with:
+```
+> athena_drv <- JDBC("com.amazonaws.athena.jdbc.AthenaDriver",
+           "C:/Cloud/driver/AthenaJDBC41-1.1.0.jar",
+           identifier.quote="'")
+```
+* Set up the connection with:
+```
+> athena_connect <- dbConnect(athena_drv, "jdbc:awsathena://athena.eu-west-1.amazonaws.com:443",
+							s3_staging_dir="s3://YOURSTAGING_DIRECTORY",
+							user= "YOUR_USER",
+							password="YOUR_PASSWORD")
+```           
+* Test the connection with
+``` 
+> dbListTables(athena_connect)
+``` 
+
 
 ## Get data from Athena
