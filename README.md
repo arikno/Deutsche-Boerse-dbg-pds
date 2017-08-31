@@ -14,13 +14,13 @@ The dataset contains a couple of fields to identfy the contract traded:
 * **ProductName** follows the naming convention on http://www.eurexchange.com (sometimes also called MarketSegment).
 *	**Underlying** is the short name of the underlying, if this an an existing index or traded product, otherwise empty.
 * **UnderlyingIsin** is the ISIN of the underlying, if the underlying is a traded product, otherwise empty.
-* Currency            Currency of the traded derivative
-* Instrument          Type of instrument (FUT future, OPT option, MLEG calendar spread, other complex instruments are excluded)
-* Maturity
-* Strike/PutOrCall
-* MLEG
-* version
-* SecurityId
+* **Currency** is the currency in which the derivative trades and so the currency the OHLC prices refer to.
+* **Instrument** is the type of instrument (FUT future, OPT option, MLEG calendar spread, all other complex instruments are excluded).
+* **Maturity** is the maturity of the given derivative.
+* **Strike**/**PutOrCall** only exist for options and define the respective option contract parameters.
+* **MLEG** is the description available only for calendar spreads, only available for calendar spreads.
+* **Version** is the contract version, also called contract generation number, that helps to uniquely describe the contract on EUREX, only available where applicable.
+* **SecurityId** is the unique identfier for the contract taken from EUREX's market data interface.
 
 ### XETRA
 
