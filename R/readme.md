@@ -31,3 +31,15 @@ In order to connect to Athena we suggest to use a JDBC connection. In order to d
 
 
 ## Get data from Athena
+
+Use the dbGetQuery function from the JDBC library to run your own select statements on the public dataset, e.g. like
+``` 
+> dbGetQuery(athena_connect, "select * from trades limit 10")
+``` 
+
+Alternatively, use the exemplary functions provided in the "download_athena.R" file attached and run e.g.:
+```
+> source('download_athena.R')
+> get.future.timeseries.days('FDAX')
+> get.future.timeseries.intraday ('FDAX','2017-08-01')
+```
