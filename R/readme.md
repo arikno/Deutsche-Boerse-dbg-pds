@@ -43,3 +43,9 @@ Alternatively, use the exemplary functions provided in the "download_athena.R" f
 > get.future.timeseries.days('FDAX')
 > get.future.timeseries.intraday ('FDAX','2017-08-01')
 ```
+
+## Plot the times series since inception
+
+
+
+
