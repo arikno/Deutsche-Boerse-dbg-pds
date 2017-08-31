@@ -30,7 +30,7 @@ XETRA data will be added in a later stage.
 
 ## Calendar
 
-Trading data is available historically. Refer to the EUREX calendar file attached in this folder to know the dates when EUREX was trading. Also, there is currently a couple of days with technical issues being under investigation.
+Trading data is available historically. Refer to the EUREX calendar [Anzeigetext für Link](eurexcalendar.csv) file attached in this folder to know the dates when EUREX was trading. Also, there is currently a couple of days with technical issues being under investigation.
 
 ## Connection
 
