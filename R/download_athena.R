@@ -1,3 +1,5 @@
+AthenaQuery = function(a,b="",c="",d="",e="",f="",g="",h="",i="",j="",k="") dbGetQuery(athena_connect, paste0(a,b,c,d,e,f,g,h,i,j,k))
+
 get.future.timeseries.days = function(ProductName) {
 		sqlQuery = paste0("SELECT securityId, execution_date, max(high) as high, min(low) as low, sum(numberofcontracts) as numberofcontracts 
 				FROM dbg_pds_test.trades where ProductName='",ProductName,"' and Instrument='FUT'
