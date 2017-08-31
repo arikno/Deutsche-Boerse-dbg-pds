@@ -11,9 +11,9 @@ Deutsche Börse Public Dataset is currently avalaible for EUREX, XETRA to be add
 The EUREX dataset contains trade data since the 2014-01-02 aggregated into one-minute time bins following the Open/High/Low/Close (OHLC) format. Additional number of trades and the number of traded contracts are provided.
 
 The dataset contains a couple of fields to identfy the contract traded:
-* ProductName         ProductName follows the naming convention on http://www.eurexchange.com (sometimes also called MarketSegment)
-*	Underlying          ShortName of underlying, if an exiting index or trading product, otherwise empty
-* UnderlyingIsin      ISIN of underlying, if underlying is a trading product, otherwise empty
+* **ProductName** follows the naming convention on http://www.eurexchange.com (sometimes also called MarketSegment).
+*	**Underlying** is the short name of the underlying, if this an an existing index or traded product, otherwise empty.
+* **UnderlyingIsin** is the ISIN of the underlying, if the underlying is a traded product, otherwise empty.
 * Currency            Currency of the traded derivative
 * Instrument          Type of instrument (FUT future, OPT option, MLEG calendar spread, other complex instruments are excluded)
 * Maturity
