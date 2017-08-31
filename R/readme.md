@@ -60,3 +60,21 @@ Plot the time series with
 ```
 R should show the following chart, where the different expiries of the future are shown in different colours.
 ![Picture not found](TimeSeriesSinceException_FDAX.png)
+
+
+## Plot an intraday chart
+
+Load exemplary plotting functions with:
+```
+> source('graphics_time_series.R')
+```
+Get the the data for time series since inception with
+```
+> intradaybins = get.future.timeseries.intraday('FDAX','2017-08-01')
+```
+Plot the time series with
+```
+> eurex.plot.intraday(intradaybins)
+```
+R should show the following chart, where the different expiries of the future are shown in different colours.
+![Picture not found](IntradayChart_FDAX_20170801.png)
