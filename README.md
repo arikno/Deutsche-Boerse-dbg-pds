@@ -38,3 +38,6 @@ Go to https://docs.aws.amazon.com/athena/latest/ug/connect-with-jdbc.html to fin
 
 The given R and Python examples required a JDBC connection.
 
+## Use cases
+
+A couple of exemplary use cases are provided in Python (not yet avilable) and R. Please refer to the corresponding directories in this folder.
