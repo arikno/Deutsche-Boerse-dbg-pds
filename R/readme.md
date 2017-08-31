@@ -59,4 +59,4 @@ Plot the time series with
 > eurex.plot.timeseries.days(daybins)
 ```
 R should show the following chart, where the different expiries of the future are shown in different colours.
-(TimeSeriesSinceException_FDAX.png)
+![Picture not found](TimeSeriesSinceException_FDAX.png)
