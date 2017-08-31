@@ -11,7 +11,7 @@ eurex.plot.timeseries.days = function(daybins) {
 		securityIdList = sort(unique(daybins[,'securityId']))
 		for(i in 1:length(securityIdList)) {
 				u = which(daybins[,'securityId']==securityIdList[i])
-				rect(x[u],y_low[u],x[u]+0.9,y_high[u],border=c("#000099","#8cd2ff","#0099ff","#5fbeff")[i%%3+1])
+				rect(x[u],y_low[u],x[u]+0.9,y_high[u],border=c("#8cd2ff","#000099","#0099ff","#5fbeff")[i%%3+1])
 			}
 		xticks = seq(xlim1[1],xlim1[2],,7)
 		axis(1,xticks,as.Date(xticks,origin='1970-01-01'))
@@ -20,7 +20,7 @@ eurex.plot.timeseries.days = function(daybins) {
 		plot(0,0,col='white',ylim=ylim2,xlim=xlim1,las=1,frame.plot=0,xlab="",ylab="",xaxt='n')
 		for(i in 1:length(securityIdList)) {
 				u = which(daybins[,'securityId']==securityIdList[i])
-				lines(x[u],y_vol[u],type='h',col=c("#000099","#8cd2ff","#0099ff","#5fbeff")[i%%3+1])
+				lines(x[u],y_vol[u],type='h',col=c("#8cd2ff","#000099","#0099ff","#5fbeff")[i%%3+1])
 			}
 		axis(1,xticks,as.Date(xticks,origin='1970-01-01'))
 	}
@@ -41,7 +41,7 @@ eurex.plot.intraday = function(intradaybins) {
 				y_close = intradaybins[u,'close']
 				t3 = cbind(c(x+0.1,x+0.9),c(y_open,y_close))
 				t3 = t3[order(t3[,1]),]
-				rect(x+0.2,y_low,x+0.8,y_high,border=c("#000099","#8cd2ff","#0099ff","#5fbeff")[i%%3+1])
+				rect(x+0.2,y_low,x+0.8,y_high,border=c("#8cd2ff","#000099","#0099ff","#5fbeff")[i%%3+1])
 			}
 		xticks = seq(xlim1[1],xlim1[2],,7)
 		xlabs = paste0(substr(100+floor(xticks/60),2,3),':',substr(100+xticks%%60,2,3))
@@ -52,7 +52,7 @@ eurex.plot.intraday = function(intradaybins) {
 				u = which(intradaybins[,'securityId']==securityIdList[i])	
 				x = as.numeric(substr(intradaybins[u,'execution_time'],1,2))*60 + as.numeric(substr(intradaybins[u,'execution_time'],4,5))				
 				y_vol = intradaybins[u,'numberofcontracts']
-				lines(x,y_vol,type='h',col=c("#000099","#8cd2ff","#0099ff","#5fbeff")[i%%3+1])
+				lines(x,y_vol,type='h',col=c("#8cd2ff","#000099","#0099ff","#5fbeff")[i%%3+1])
 			}
 		axis(1,xticks,xlabs)		
 	}
