@@ -1,4 +1,4 @@
-# TryDBAG-PDS
+# DBG-PDS
 
 This repository contains a description and examplary use cases for the Deutsche Börse Public Dataset.
 
