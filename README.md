@@ -24,7 +24,7 @@ Trading data is available historically. A calendar is initially available for th
 
 ## Example Use Cases
 
-A couple of exemplary use cases are provided in SQL in the [examples](examples/) folder.
+Exemplary use cases are provided in SQL for XETRA data in the [examples](examples/) folder.
 
 ## Terms and Conditions
 
