@@ -20,4 +20,6 @@ Trading data is available historically. A calendar is initially available for th
 
 ## Use cases
 
-A couple of exemplary use cases are provided in Python (not yet avilable) and R. Please refer to the corresponding directories in this folder.
+A couple of exemplary use cases are provided in SQL in the [examples](examples/) folder.
+
+## Terms and Conditions
