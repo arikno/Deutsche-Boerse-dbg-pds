@@ -10,6 +10,10 @@ The PDS is created using a cloud provider's infrastructure continually and made 
 
 Deutsche Boerse Group believes that freely available, high quality data fosters innovation and creates business opportunities. The financial community, academic researchers, data scientists and others can explore the possibilities of the data to open up new analysis and product possibilities.
 
+## Location(s)
+
+* [AWS Public Dataset](tbc)
+
 ## Data Dictionary
 
 The contents of the Deutsche Börse Public Dataset, from the XETRA and EUREX trading engines, are defined in the [data dictionary](docs/data_dictionary.md).
@@ -23,3 +27,5 @@ Trading data is available historically. A calendar is initially available for th
 A couple of exemplary use cases are provided in SQL in the [examples](examples/) folder.
 
 ## Terms and Conditions
+
+* TBC
