@@ -10,7 +10,7 @@ Deutsche Boerse Group believes that freely available, high quality data fosters 
 
 ## Data Dictionary
 
-The Deutsche Börse Public Dataset is actually comprised of two sets of datas, representing source data from the XETRA and EUREX trading engines. The contents of this data are defined in the [data dictionary](docs/data_dictionary.md).
+The contents of the Deutsche Börse Public Dataset, from the XETRA and EUREX trading engines, are defined in the [data dictionary](docs/data_dictionary.md).
 
 ## Calendar
 
