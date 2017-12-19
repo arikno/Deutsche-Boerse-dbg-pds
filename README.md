@@ -18,7 +18,7 @@ The contents of the Deutsche Börse Public Dataset, from the XETRA and EUREX tra
 
 Trading data is available historically. A calendar is initially available for the EUREX data set ([EUREX calendar](docs/calendars/eurex_calendar.csv)) attached to know the dates when trading occurred. Also, there is currently a couple of days with technical issues being under investigation, which are also mentioned in the calendar.
 
-## Use cases
+## Example Use Cases
 
 A couple of exemplary use cases are provided in SQL in the [examples](examples/) folder.
 
