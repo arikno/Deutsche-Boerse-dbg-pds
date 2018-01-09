@@ -12,7 +12,10 @@ Deutsche Boerse Group believes that freely available, high quality data fosters 
 
 ## Location(s)
 
-* [AWS Public Dataset](tbc)
+The data is uploaded into two Amazon S3 Buckets in the EU (Ireland) region:
+
+* [s3://deutsche-boerse-xetra-pds](https://s3.eu-central-1.amazonaws.com/deutsche-boerse-xetra-pds) (for XETRA data)
+* [s3://deutsche-boerse-eurex-pds](https://s3.eu-central-1.amazonaws.com/deutsche-boerse-eurex-pds) (for EUREX data)
 
 ## Data Dictionary
 
