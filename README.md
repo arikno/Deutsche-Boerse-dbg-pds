@@ -32,3 +32,7 @@ Exemplary use cases are provided in SQL for XETRA data in the [examples](example
 ## Terms and Conditions
 
 * TBC
+
+## License
+
+* TBC
