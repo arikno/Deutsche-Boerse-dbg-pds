@@ -31,4 +31,4 @@ Exemplary use cases are provided in SQL for XETRA data in the [examples](example
 
 ## License/Terms and Conditions
 
-* Non-commercial (NC) - licensees may copy, distribute, display, and perform the work and make derivative works and remixes based on it only for non-commercial purposes.
+Non-commercial (NC) - licensees may copy, distribute, display, and perform the work and make derivative works and remixes based on it only for non-commercial purposes.
