@@ -29,6 +29,6 @@ Trading data is available historically. A calendar is initially available for th
 
 Exemplary use cases are provided in SQL for XETRA data in the [examples](examples/) folder.
 
-## License/Terms and Conditions
+## Terms and Conditions
 
-Non-commercial (NC) - licensees may copy, distribute, display, and perform the work and make derivative works and remixes based on it only for non-commercial purposes.
+License: Non-commercial (NC) - licensees may copy, distribute, display, and perform the work and make derivative works and remixes based on it only for non-commercial purposes.
