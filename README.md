@@ -4,7 +4,7 @@
 
 The Deutsche Börse Public Dataset (PDS) project makes real-time data derived from Deutsche Börse's trading market systems available to the public for free. This is the first instance that such detailed financial market data has been shared freely and continually from the source provider. 
 
-This data is provided on a minute-by-minute basis and aggregated and processed from the [XETRA](http://www.xetra.com) and [EUREX](http://www.eurex.com/) engines, which comprise a variety of equities, funds and derivative securities. The PDS contains details for on a per security level, detailing trading activity by minute including the high, low, first and last prices within the time period. 
+This data is provided on a minute-by-minute basis and aggregated and processed from the [XETRA](http://www.xetra.com) and [EUREX](http://www.eurexchange.com/) engines, which comprise a variety of equities, funds and derivative securities. The PDS contains details for on a per security level, detailing trading activity by minute including the high, low, first and last prices within the time period. 
 
 The PDS is created using a cloud provider's infrastructure continually and made available through their public data repository initiatives, such as the [AWS Public Dataset project](https://aws.amazon.com/public-datasets/).
 
