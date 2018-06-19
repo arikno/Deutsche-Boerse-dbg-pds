@@ -14,16 +14,16 @@ The dataset contains the following fields:
 |Mnemonic|Stock exchange ticker symbol |string|
 |SecurityDesc|Description of the security|string|
 |SecurityType|Type of security|string|
+|Currency|Currency in which the product is traded|ISO 4217 string (see https://en.wikipedia.org/wiki/ISO_4217)|
 |SecurityID|Unique identifier for each contract|int|
 |Date |Date of trading period |date |
-|Time |Hour and Minute of Trading Activity |time |
-|Currency|Currency in which the product is traded|string - GBP (British Pounds Sterling); USD (US Dollar) TWD (Taiwan Dollar); CHF (Swiss franc); GBX (British Pence Sterling); EUR (Euro); KRW (Korean Won)|
+|Time|Minute of trading to which this entry relates|time (hh:mm)|
 |StartPrice|Trading price at the start of period|float|
 |MaxPrice|Maximum price over the period|float|
 |MinPrice|Minimum price over the period|float|
 |EndPrice|Trading price at the end of the period|float|
 |TradedVolume|Total value traded|float|
-|NumberOfTrades|Number of distinct transactions during the period|int|
+|NumberOfTrades|Number of distinct trades during the period|int|
 
 ## EUREX
 
@@ -36,20 +36,20 @@ The dataset contains the following fields:
 |ISIN|ISIN of the security|string|
 |MarketSegment|The product market segment, following the convention on http://www.eurexchange.com|string|
 |UnderlyingSymbol|The underlying security|string|
-|UnderlyingISIN|ISIN of the underlying security|string|
+|UnderlyingISIN|ISIN of any underlying security|string|
+|Currency|Currency in which the product is traded|ISO 4217 string (see https://en.wikipedia.org/wiki/ISO_4217)|
 |SecurityType|Type of instrument|string - OPT (option), FUT (future)|
 |MaturityDate|Maturity date of the security|date|
 |StrikePrice|Strike price|float|
 |PutOrCall|Type of option|string - PUT, CALL|
 |MLEG|Identifies multi-leg options|string|
-|ContractGenerationNumber|The contract generation number, which allows one to specify the contract on EUREX|int|
+|ContractGenerationNumber|The generation number for options contracts|int|
 |SecurityID|Unique identifier for each contract|int|
-|Date|Date of trading period |date |
-|Time|Hour and Minute of Trading Activity|time (hh:mm)|
-|Currency|Currency in which the product is traded|string - GBP (British Pounds Sterling); USD (US Dollar) TWD (Taiwan Dollar); CHF (Swiss franc); GBX (British Pence Sterling); EUR (Euro); KRW (Korean Won)|
+|Date|Date of trading period|date |
+|Time|Minute of trading to which this entry relates|time (hh:mm)|
 |StartPrice|Trading price at the start of period|float|
 |MaxPrice|Maximum price over the period|float|
 |MinPrice|Minimum price over the period|float|
 |EndPrice|Trading price at the end of the period|float|
-|NumberOfContracts|Number of contracts traded during the period|in|
-|NumberOfTrades|Number of distinct transactions during the period|int|
+|NumberOfContracts|Number of contracts traded during the period|int|
+|NumberOfTrades|Number of distinct trades during the period|int|
