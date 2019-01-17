@@ -6,7 +6,6 @@ This API provides access to the Deutsche Boerse Public Data Set, which consists 
 
 **License:** [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
 
-### EXAMPLE: `curl -H "X-DBP-APIKEY: <INSERT YOUR API KEY HERE>" https://api.developer.deutsche-boerse.com/prod/eurex-public-data-set/1.0.0/eurex?date=2018-06-28`
 ---
 ##### ***GET***
 **Summary:** Get small sample of Eurex trading data
@@ -31,7 +30,16 @@ This API provides access to the Deutsche Boerse Public Data Set, which consists 
 | 400 | Bad request - If a bad parameter is passed in, API will return a 400 Bad Request error, with the following message: "Illegal parameter passed in"|
 | 500 | Internal server error |
 
-### EXAMPLE: `curl -H "X-DBP-APIKEY: <INSERT YOUR API KEY HERE>" https://api.developer.deutsche-boerse.com/prod/xetra-public-data-set/1.0.0/xetra?date=2018-06-28`
+**Examples**
+
+* Grab all of the current trading day's data: (NOTE: Exchange has to be open for data to be returned)  NOTE: Only 100 records are returned per call, use the offset parameter to get the next page of data.</br>`curl -H "X-DBP-APIKEY: <INSERT YOUR API KEY HERE>" https://api.developer.deutsche-boerse.com/prod/eurex-public-data-set/1.0.0/eurex`
+
+* Offet: Select which page of data to grab.  Data is sent in 100 record pages.</br>`curl -H "X-DBP-APIKEY: <INSERT YOUR API KEY HERE>" https://api.developer.deutsche-boerse.com/prod/eurex-public-data-set/1.0.0/eurex?offset=1`
+
+* Grab all trading data for specific date:</br>`curl -H "X-DBP-APIKEY: <INSERT YOUR API KEY HERE>" https://api.developer.deutsche-boerse.com/prod/eurex-public-data-set/1.0.0/eurex?date=2018-06-28`
+
+* Grab all data for a particular ISIN:</br>`curl -H "X-DBP-APIKEY: <INSERT YOUR API KEY HERE>" https://api.developer.deutsche-boerse.com/prod/eurex-public-data-set/1.0.0/eurex?isin=DE000C0T9TT0`
+
 ---
 ##### ***GET***
 **Summary:** Get small sample of Xetra trading data
@@ -55,6 +63,17 @@ This API provides access to the Deutsche Boerse Public Data Set, which consists 
 | 200 | Successful query | [ [Xetra](#xetra) ] |
 | 400 | Bad request - If a bad parameter is passed in, API will return a 400 Bad Request error, with the following message: "Illegal parameter passed in" |
 | 500 | Internal server error |
+
+
+**Examples**
+
+* Grab all of the current trading day's data: (NOTE: Exchange has to be open for data to be returned)  NOTE: Only 100 records are returned per call, use the offset parameter to get the next page of data.</br>`curl -H "X-DBP-APIKEY: <INSERT YOUR API KEY HERE>" https://api.developer.deutsche-boerse.com/prod/xetra-public-data-set/1.0.0/xetra`
+
+* Offet: Select which page of data to grab.  Data is sent in 100 record pages.</br>`curl -H "X-DBP-APIKEY: <INSERT YOUR API KEY HERE>" https://api.developer.deutsche-boerse.com/prod/xetra-public-data-set/1.0.0/xetra?offset=1`
+
+* Grab all trading data for specific date:</br>`curl -H "X-DBP-APIKEY: <INSERT YOUR API KEY HERE>" https://api.developer.deutsche-boerse.com/prod/xetra-public-data-set/1.0.0/xetra?date=2018-06-28`
+
+* Grab all data for a particular ISIN:</br>`curl -H "X-DBP-APIKEY: <INSERT YOUR API KEY HERE>" https://api.developer.deutsche-boerse.com/prod/xetra-public-data-set/1.0.0/xetra?isin=FR0010527275`
 
 ### Models
 ---
