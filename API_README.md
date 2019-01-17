@@ -32,7 +32,10 @@ This API provides access to the Deutsche Boerse Public Data Set, which consists 
 
 **Examples**
 
-* Grab all of the current trading day's data: (NOTE: Exchange has to be open for data to be returned)  NOTE: Only 100 records are returned per call, use the offset parameter to get the next page of data.</br>`curl -H "X-DBP-APIKEY: <INSERT YOUR API KEY HERE>" https://api.developer.deutsche-boerse.com/prod/eurex-public-data-set/1.0.0/eurex`
+* Grab all of the current trading day's data: 
+</br>**NOTE: Exchange has to be open for data to be returned**
+</br>**NOTE: Only 100 records are returned per call, use the offset parameter to get the next page of data.  Keep incrementing the offset until no data is returned.  We do not send the total number of pages available**
+</br>`curl -H "X-DBP-APIKEY: <INSERT YOUR API KEY HERE>" https://api.developer.deutsche-boerse.com/prod/eurex-public-data-set/1.0.0/eurex`
 
 * Offet: Select which page of data to grab.  Data is sent in 100 record pages.</br>`curl -H "X-DBP-APIKEY: <INSERT YOUR API KEY HERE>" https://api.developer.deutsche-boerse.com/prod/eurex-public-data-set/1.0.0/eurex?offset=1`
 
@@ -67,7 +70,10 @@ This API provides access to the Deutsche Boerse Public Data Set, which consists 
 
 **Examples**
 
-* Grab all of the current trading day's data: (NOTE: Exchange has to be open for data to be returned)  NOTE: Only 100 records are returned per call, use the offset parameter to get the next page of data.</br>`curl -H "X-DBP-APIKEY: <INSERT YOUR API KEY HERE>" https://api.developer.deutsche-boerse.com/prod/xetra-public-data-set/1.0.0/xetra`
+* Grab all of the current trading day's data: 
+</br>**NOTE: Exchange has to be open for data to be returned**
+</br>**NOTE: Only 100 records are returned per call, use the offset parameter to get the next page of data.  Keep incrementing the offset until no data is returned.  We do not send the total number of pages available**
+</br>`curl -H "X-DBP-APIKEY: <INSERT YOUR API KEY HERE>" https://api.developer.deutsche-boerse.com/prod/xetra-public-data-set/1.0.0/xetra`
 
 * Offet: Select which page of data to grab.  Data is sent in 100 record pages.</br>`curl -H "X-DBP-APIKEY: <INSERT YOUR API KEY HERE>" https://api.developer.deutsche-boerse.com/prod/xetra-public-data-set/1.0.0/xetra?offset=1`
 
