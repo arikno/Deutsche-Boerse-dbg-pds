@@ -22,7 +22,7 @@ The data is uploaded into two Amazon S3 Buckets in the EU Central (Frankfurt) re
 
 Each bucket contains a directory for each available date, named in the ISO 8601 format `YYYY-MM-DD`.
 
-For dates other than the current trading day in Frankfurt time, where the exchanges live, a file exists for each hour of the trading day.  These files are named `YYYY-MM-DD_BINS_mrkthh.csv`, where `mkrt` is either XEUR or XETR (ISO 10383 Market Identification Codes) and `hh` is the two digit hour indicating which hour of trading the file contains, in 24 hour format.
+For dates other than the current trading day in Frankfurt time, where the exchanges live, a file exists for each hour of the trading day.  These files are named `YYYY-MM-DD_BINS_mrkthh.csv`, where `mkrt` is either XEUR or XETR (ISO 10383 Market Identification Codes) and `hh` is the two digit hour indicating which hour of trading the file contains, in 24 hour format. Time is in UTC  (both for file names as well as for the content).
 
 For example:
 ```
